@@ -1,0 +1,153 @@
+.background {
+    background-color: rgb(250, 210, 217);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 450px 450px;
+    gap: 80px;
+    margin: 0 90px;
+    text-align:center;
+    border-bottom: 1px solid rgb(29, 70, 46);
+    padding-bottom: 10px;
+    /* min-height: 100vh; */
+}
+.container p.price{
+    text-align: right;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9em;
+}
+.container p.info{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9em;
+    text-align: left;
+    color: black;
+
+}
+.container h2 {
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color: black;
+}
+.container h3 {
+    font-weight: 700;
+    color: rgb(23, 100, 55);
+    border-bottom: 1px solid rgb(29, 70, 46);
+}
+.title {
+    color: black;
+    letter-spacing: 0.1em;
+    grid-column: span 3;
+    grid-row: span 1;
+    align-items: center;
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(29, 70, 46);
+    padding-bottom: 70px;
+}
+
+.massages{
+    grid-column: span 1;
+}
+.facials{
+    grid-column: span 1;
+}
+.packages{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.bodytreatments{
+    align-items: center;
+    grid-column: span 2;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 2px;
+}
+.treatmentTitle {
+    grid-column: span 2;
+    border-top: 1px solid rgb(29, 70, 46);
+    padding: 20px;
+}
+
+.treatment1 {
+    grid-column: span 1;
+}
+.treatment2 {
+    grid-column: span 1;
+}
+.treatment3 {
+    grid-column: span 2;
+    text-align: center;
+}
+.treatment3 p {
+    text-align: center;
+}
+
+/* RESPONSIVE::::: */
+/* PHONE SIZE */
+@media screen and (max-width: 1206px) {
+
+    .title {
+        border-bottom: 0ch;
+    }
+
+    .massages{
+        grid-column: span 3;
+    }
+    .facials{
+        grid-column: span 3;
+        padding-top: 50px;
+    }
+    .packages{
+        grid-column: span 3;
+        padding-top: 20px;
+    }
+    .bodytreatments{
+        grid-column: span 3;
+        padding-bottom: 30px;
+    }
+    .container h2 {
+        margin: 50px 0;
+        border-top: 1px solid rgb(29, 70, 46);
+        border-bottom: 1px solid rgb(29, 70, 46);
+    }
+    .container h3 {
+        border-bottom: 1px solid rgb(29, 70, 46);
+        display: inline-block;
+    }
+    .treatmentTitle {
+        padding-bottom: 20px;
+    }
+    .treatment1 {
+        grid-column: span 2;
+        padding-top: 40px;
+    }
+    .treatment2 {
+        grid-column: span 2;
+    }
+    
+}
+/* RESPONSIVE IPAD/MEDIUM SIZE */
+@media screen and (min-width: 700px) and (max-width: 1206px) {
+    .container {
+        margin: 0px 150px;
+    }
+    .container p.price {
+        text-align: center;
+    }
+    .container p.info {
+        text-align: center;
+    }
+}
+
+
+/* RESPONSIVE SUPER SMALL */
+
+@media screen and (max-width: 455px) {
+    .container {
+        margin: 0px 50px;
+    }
+}

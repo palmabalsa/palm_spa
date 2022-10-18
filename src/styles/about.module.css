@@ -1,0 +1,43 @@
+.about h2 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    color: pink;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 60px 30px;
+}
+
+.text {
+    grid-column: span 1;
+}
+
+.image {
+    grid-column: span 1;
+}
+
+div.image img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+
+/* RESPONSIVE::::: */
+@media screen and (max-width: 1100px){
+
+    .text {
+        grid-column: span 2;
+    }
+
+    .image{
+        grid-column: span 2;
+    }
+}
+    

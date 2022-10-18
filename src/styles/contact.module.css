@@ -1,0 +1,48 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 250px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+.contactInfo {
+    grid-column: span 1;
+    text-align: center;
+}
+.contactInfo h2 {
+    text-align: center;
+}
+
+.hours {
+    text-align: center;
+    grid-column: span 1;
+}
+
+
+.hours p {
+    text-align: right;
+}
+
+
+/* ::::::: RESPONSIVE::::: PHONE SIZE ::::::::: */
+@media screen and (max-width: 1036px){
+    .contact {
+        margin: 20px 20px;
+    }
+
+    .contactInfo {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .hours {
+        grid-column: span 2;
+        border-top: 1px solid white;
+        text-align: center;
+    }
+    .hours p {
+        text-align: center;
+    }
+}

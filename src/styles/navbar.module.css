@@ -1,0 +1,76 @@
+nav {
+    background:  rgb(0, 36, 28);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 60px 60px;
+    gap: 5px;
+}
+
+.palmLogo {
+    grid-column: span 1;
+    max-width: 50%;
+}
+.hamburgerbutton {
+    grid-column: span 1;
+    height: 40px;
+    width: 35px;
+    align-content: right;
+    align-items: right;
+    text-align: right;
+    display: none;
+}
+
+.hamburgerbutton a {
+    padding: 0;
+    align-items: right;
+    text-align: right;
+    align-content: right;
+}
+.bar {
+    display: block;
+    width: 20px;
+    border: 1px solid white;
+    margin: 8px 7px;
+    align-items: right;
+    align-content: right;
+    text-align: right;
+}
+
+/* LINKS INSIDE NAV */
+.links {
+    grid-column: span 1;
+    display: inline-block;
+    text-align: right;
+}
+/* EACH INDIVIDUAL NAV LINK */
+.links a {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    color: pink;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+}
+.links a:hover{
+    border-color: pink;
+}
+
+@media screen and (max-width: 600px){
+
+    .links a{
+        padding-bottom: 2px;
+        margin-left: 5px;
+    }
+    /* .hamburgerbutton{
+        display: grid;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+    }
+    .links {
+        display: none;
+    } */
+}
+ 
