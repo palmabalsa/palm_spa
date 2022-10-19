@@ -2,13 +2,16 @@ nav {
     background:  rgb(0, 36, 28);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 40px 60px 60px;
+    margin: 40px 250px 50px 60px;
     gap: 5px;
 }
 
 .palmLogo {
     grid-column: span 1;
-    max-width: 50%;
+    /* max-width: 50%; */
+}
+.palmLogo img {
+    width: 50%;
 }
 .hamburgerbutton {
     grid-column: span 1;
@@ -59,9 +62,30 @@ nav {
 
 @media screen and (max-width: 600px){
 
+    nav {
+        margin: 30px 20px 40px;
+    }
+
+    .palmLogo {
+        align-content: left;
+        margin: 0;
+        align-items: center;
+    }
+    .palmLogo img{
+        width: 100%;
+        align-items: center;
+    }
+
+    .links {
+        margin: 0;
+    }
+
     .links a{
-        padding-bottom: 2px;
-        margin-left: 5px;
+        display: block;
+        padding-bottom: 0;  
+    }
+    .links a:hover{
+        display: inline-block
     }
     /* .hamburgerbutton{
         display: grid;
@@ -69,8 +93,6 @@ nav {
         top: 60px;
         right: 30px;
     }
-    .links {
-        display: none;
-    } */
+     */
 }
  

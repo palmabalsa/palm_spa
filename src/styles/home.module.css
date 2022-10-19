@@ -41,7 +41,7 @@
 /* ::::::: RESPONSIVE::::: PHONE SIZE ::::::::: */
 @media screen and (max-width: 1041px){
     .home{
-        margin: 0 20px;
+        margin: 0;
     }
     .massageimages {
         grid-column: span 3;
@@ -58,8 +58,12 @@
 }
 
 @media screen and (max-width: 738px){
+
+    .home {
+        margin:0;
+    }
     .massageimages{
-        margin: 0 10px;
+        margin: 0;
     }
 
     .leaves img {

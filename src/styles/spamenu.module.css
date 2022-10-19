@@ -146,8 +146,16 @@
 
 /* RESPONSIVE SUPER SMALL */
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 500px) {
     .container {
-        margin: 0px 50px;
+        margin: 0px 10px;
+        grid-template-rows: 10px 450px 450px;
+    }
+    .container p.info {
+        text-align: center;
+    }
+
+    .title {
+        padding-bottom: 0;
     }
 }
