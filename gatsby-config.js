@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/palm_spa",
   /* Your site config here */
   plugins: [
     {
