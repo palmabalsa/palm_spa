@@ -7,7 +7,6 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-  'gatsby-plugin-netlify',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
