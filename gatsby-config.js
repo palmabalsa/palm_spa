@@ -8,6 +8,11 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      resolve: 'gatsby-plugin-netlify',
+      options: {},
+
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Palm Spa",
