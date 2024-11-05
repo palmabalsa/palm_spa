@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.home}>
 
         <div className={styles.leaves}>
-          <img src="/palmSpaLogo.png" alt="palm spa logo" style={{ maxWidth: '50%'}}/>
+          <img src="/palm_logo_24_.png" alt="palm spa logo" style={{ maxWidth: '50%'}}/>
 
         <p>  A boutique spa experience on the shores of Lake Taupo </p>
         </div>
