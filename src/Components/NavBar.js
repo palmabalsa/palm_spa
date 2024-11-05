@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav>
       <div className={styles.palmLogo}>
-      <img src="/palmSpaLogo.png" alt="palm spa logo"/>
+      <img src="/palm_logo_24_.png" alt="palm spa logo"/>
 
       </div>
         {/* <div className={styles.hamburgerbutton }>
